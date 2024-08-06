@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/const/color.dart';
+import 'package:my_app/screens/signup_screen.dart';
 import 'package:my_app/utils/LoginUtils/dividers.dart';
 import 'package:my_app/utils/LoginUtils/emailtextform.dart';
 import 'package:my_app/utils/LoginUtils/facebook.dart';
@@ -26,13 +27,6 @@ class _LoginScreenState extends State<LoginScreen> {
               image: AssetImage('assets/images/background.png'),
               fit: BoxFit.cover,
             ),
-            // boxShadow: [
-            //   BoxShadow(
-            //     color: Colors.black26,
-            //     offset: Offset(0, 4),
-            //     blurRadius: 250,
-            //   ),
-            // ],
           ),
           child: Column(
             children: <Widget>[
@@ -117,7 +111,13 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             
             TextButton(
-              onPressed: (){},
+              onPressed: (){
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const SignupScreen(),
+                    )
+                );
+              },
                child: Text(
             "Sign Up",
             style: TextStyle(

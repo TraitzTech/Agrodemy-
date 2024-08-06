@@ -17,7 +17,8 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Future.delayed(const Duration(seconds: 4), () {
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const LoginScreen())
+        MaterialPageRoute(builder: (context) => const LoginScreen()
+        ),
       );
     });
   }
@@ -32,20 +33,13 @@ class _SplashScreenState extends State<SplashScreen> {
             image: AssetImage('assets/images/background.png'),
             fit: BoxFit.cover,
           ),
-          // boxShadow: [
-          //   BoxShadow(
-          //     color: Colors.black26,
-          //     offset: Offset(0, 4),
-          //     blurRadius: 250,
-          //   ),
-          // ],
         ),
         child: Center(
           child: Image.asset(
             'assets/icons/logo.png',
-           width: 154,
+           width: 150,
            height: 150,
-           )
+           ),
         ),
       );
   }
