@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/const/color.dart';
 
-class PasswordForm extends StatefulWidget {
-  const PasswordForm({super.key});
+class ConfirmPasswordTextform extends StatefulWidget {
+  const ConfirmPasswordTextform({ super.key });
 
   @override
-  State<PasswordForm> createState() => _PasswordFormState();
+  // ignore: library_private_types_in_public_api
+  _ConfirmPasswordTextformState createState() => _ConfirmPasswordTextformState();
 }
 
-class _PasswordFormState extends State<PasswordForm> {
+class _ConfirmPasswordTextformState extends State<ConfirmPasswordTextform> {
   late final TextEditingController _password;
   bool _passwordVisible = false;
   
@@ -54,7 +55,7 @@ class _PasswordFormState extends State<PasswordForm> {
                           ),
                         ),
       
-                    labelText: 'password',
+                    labelText: 'Enter password again',
                     
                     filled: true,
                     fillColor: white,
@@ -63,6 +64,7 @@ class _PasswordFormState extends State<PasswordForm> {
                   cursorColor: black,
                   cursorHeight: 20,
                   cursorErrorColor: red,
+      
                   keyboardType: TextInputType.visiblePassword,
                 ),
     );
