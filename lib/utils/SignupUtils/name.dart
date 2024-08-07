@@ -1,33 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/const/color.dart';
 
-class EmailTextForm extends StatelessWidget {
-  const EmailTextForm({super.key});
+class Name extends StatelessWidget {
+const Name({ super.key });
 
   @override
-  Widget build(BuildContext context) {
-    return  SizedBox(
+  Widget build(BuildContext context){
+    return SizedBox(
       height: 40,
       child: TextFormField(
                   decoration:  InputDecoration(
+                    constraints: const BoxConstraints(minWidth: 10),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(40.0)
                     ),
       
                     prefixIcon: Icon(
-                      Icons.email_outlined,
+                      Icons.person_pin,
                       color: green,
                       ),
       
-                    labelText: 'yourmail@gmail.com',
+                    labelText: 'Your name',
                     filled: true,
                     fillColor: white,
                   ),
-                  showCursor: true,
-                  cursorColor: black,
-                  cursorHeight: 20,
-                  cursorErrorColor: red,
-                  keyboardType: TextInputType.emailAddress,
+                  
+      
+                  keyboardType: TextInputType.name,
                 ),
     );
   }
