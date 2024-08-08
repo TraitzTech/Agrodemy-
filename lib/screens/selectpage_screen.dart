@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/const/color.dart';
+import 'package:my_app/utils/SignupUtils/next_button.dart';
 
 class AgeSelectionPage extends StatefulWidget {
   const AgeSelectionPage({super.key});
@@ -77,7 +78,7 @@ class _AgeSelectionPageState extends State<AgeSelectionPage> {
                       borderRadius: const BorderRadius.all(Radius.circular(80))
                     ),
                     child: ListTile(
-                      title: const Text('13 - 20'),
+                      title: const Center(child: Text('13 - 20')),
                       leading: Radio(
                         fillColor: WidgetStatePropertyAll(white),
                         value: 1,
@@ -98,7 +99,7 @@ class _AgeSelectionPageState extends State<AgeSelectionPage> {
                       borderRadius: const BorderRadius.all(Radius.circular(80))
                     ),
                     child: ListTile(
-                      title: const Text('21+'),
+                      title: const Center(child: Text('21+')),
                       leading: Radio(
                         fillColor: WidgetStatePropertyAll(white),
                         value: 2,
@@ -114,7 +115,7 @@ class _AgeSelectionPageState extends State<AgeSelectionPage> {
                 ],
               ),
               const SizedBox(height: 20),
-              Row(
+               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   ElevatedButton(
