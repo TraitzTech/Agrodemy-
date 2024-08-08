@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:my_app/const/color.dart';
 
 class PasswordForm extends StatefulWidget {
-  const PasswordForm({super.key});
+   final String text;
+  const PasswordForm({
+    required this.text,
+    super.key});
 
   @override
   State<PasswordForm> createState() => _PasswordFormState();
@@ -54,7 +57,7 @@ class _PasswordFormState extends State<PasswordForm> {
                           ),
                         ),
       
-                    labelText: 'password',
+                    labelText: widget.text,
                     
                     filled: true,
                     fillColor: white,

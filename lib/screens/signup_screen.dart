@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/const/color.dart';
+import 'package:my_app/screens/forgot_password_screen.dart';
 import 'package:my_app/utils/LoginUtils/dividers.dart';
 import 'package:my_app/utils/LoginUtils/emailtextform.dart';
 import 'package:my_app/utils/LoginUtils/facebook.dart';
 import 'package:my_app/utils/LoginUtils/google.dart';
 import 'package:my_app/utils/LoginUtils/passwordtextform.dart';
-import 'package:my_app/utils/SignupUtils/confirm_password_textform.dart';
 import 'package:my_app/utils/SignupUtils/name.dart';
 import 'package:my_app/utils/SignupUtils/next_button.dart';
 
@@ -53,12 +53,14 @@ class _SignupScreenState extends State<SignupScreen> {
                   const SizedBox(height: 10),
                   const EmailTextForm(),
                   const SizedBox(height: 10),
-                 const PasswordForm(),   
+                 const PasswordForm(text: 'Password',),   
                  const SizedBox(height: 10),
-                 const ConfirmPasswordTextform(),
+                 const PasswordForm(text: 'Enter password again'),
                 TextButton(
                   onPressed: (){
-              
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => const ForgotPasswordScreen())
+              );
                   },
                  child: Align(
                   alignment: Alignment.centerRight,

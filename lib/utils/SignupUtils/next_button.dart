@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/const/color.dart';
+import 'package:my_app/screens/selectpage_screen.dart';
 
 class NextButton extends StatelessWidget {
 const NextButton({ super.key });
@@ -8,7 +9,9 @@ const NextButton({ super.key });
   Widget build(BuildContext context){
     return ElevatedButton(
       onPressed: (){
-        
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (context) => const AgeSelectionPage())
+        );
        
       },
        style: ElevatedButton.styleFrom(
