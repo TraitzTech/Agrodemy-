@@ -1,6 +1,6 @@
+import 'package:Agrodemy/const/color.dart';
+import 'package:Agrodemy/screens/login_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:my_app/const/color.dart';
-import 'package:my_app/screens/login_screen.dart';
 
 class RecoverButton extends StatelessWidget {
 const RecoverButton({ super.key });

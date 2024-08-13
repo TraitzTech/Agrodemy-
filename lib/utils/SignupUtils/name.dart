@@ -1,5 +1,5 @@
+import 'package:Agrodemy/const/color.dart';
 import 'package:flutter/material.dart';
-import 'package:my_app/const/color.dart';
 
 class Name extends StatelessWidget {
 const Name({ super.key });

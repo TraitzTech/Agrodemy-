@@ -1,7 +1,6 @@
+import 'package:Agrodemy/const/color.dart';
+import 'package:Agrodemy/screens/selectpage_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:my_app/const/color.dart';
-import 'package:my_app/screens/selectpage_screen.dart';
-
 class NextButton extends StatelessWidget {
 const NextButton({ super.key });
 

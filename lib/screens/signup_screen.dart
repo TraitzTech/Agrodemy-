@@ -1,13 +1,14 @@
+import 'package:Agrodemy/const/color.dart';
+import 'package:Agrodemy/screens/forgot_password_screen.dart';
+import 'package:Agrodemy/utils/LoginUtils/dividers.dart';
+import 'package:Agrodemy/utils/LoginUtils/emailtextform.dart';
+import 'package:Agrodemy/utils/LoginUtils/facebook.dart';
+import 'package:Agrodemy/utils/LoginUtils/google.dart';
+import 'package:Agrodemy/utils/LoginUtils/passwordtextform.dart';
+import 'package:Agrodemy/utils/SignupUtils/name.dart';
+import 'package:Agrodemy/utils/SignupUtils/next_button.dart';
 import 'package:flutter/material.dart';
-import 'package:my_app/const/color.dart';
-import 'package:my_app/screens/forgot_password_screen.dart';
-import 'package:my_app/utils/LoginUtils/dividers.dart';
-import 'package:my_app/utils/LoginUtils/emailtextform.dart';
-import 'package:my_app/utils/LoginUtils/facebook.dart';
-import 'package:my_app/utils/LoginUtils/google.dart';
-import 'package:my_app/utils/LoginUtils/passwordtextform.dart';
-import 'package:my_app/utils/SignupUtils/name.dart';
-import 'package:my_app/utils/SignupUtils/next_button.dart';
+
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({ super.key });

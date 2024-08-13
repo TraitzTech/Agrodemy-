@@ -1,5 +1,5 @@
+import 'package:Agrodemy/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:my_app/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());

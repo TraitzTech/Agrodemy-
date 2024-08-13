@@ -1,8 +1,8 @@
+import 'package:Agrodemy/const/color.dart';
+import 'package:Agrodemy/utils/ForgotPasswordUtils/recover_button.dart';
+import 'package:Agrodemy/utils/LoginUtils/emailtextform.dart';
+import 'package:Agrodemy/utils/LoginUtils/passwordtextform.dart';
 import 'package:flutter/material.dart';
-import 'package:my_app/utils/ForgotPasswordUtils/recover_button.dart';
-import 'package:my_app/utils/LoginUtils/emailtextform.dart';
-import 'package:my_app/const/color.dart';
-import 'package:my_app/utils/LoginUtils/passwordtextform.dart';
 class ForgotPasswordScreen extends StatefulWidget {
   const ForgotPasswordScreen({
      super.key 
