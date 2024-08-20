@@ -30,6 +30,7 @@ class _PasswordFormState extends State<PasswordForm> {
   Widget build(BuildContext context) {
     return  SizedBox(
       height: 40,
+      width: 350,
       child: TextFormField(
                   controller: _password,
                   obscureText: !_passwordVisible,

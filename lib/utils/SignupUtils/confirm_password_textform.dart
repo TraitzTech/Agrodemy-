@@ -28,6 +28,7 @@ class _ConfirmPasswordTextformState extends State<ConfirmPasswordTextform> {
   Widget build(BuildContext context) {
     return  SizedBox(
       height: 40,
+      width: 350,
       child: TextFormField(
                   controller: _password,
                   obscureText: !_passwordVisible,

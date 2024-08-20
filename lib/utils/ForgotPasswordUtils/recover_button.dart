@@ -15,7 +15,7 @@ const RecoverButton({ super.key });
        
       },
        style: ElevatedButton.styleFrom(
-        minimumSize: const Size(500,40),
+        minimumSize: const Size(450,40),
         backgroundColor: green,
        ),
        child:Text(

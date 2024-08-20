@@ -1,6 +1,8 @@
 import 'package:Agrodemy/const/color.dart';
 import 'package:flutter/material.dart';
 
+import 'dashboard_screen.dart';
+
 class AgeSelectionPage extends StatefulWidget {
   const AgeSelectionPage({super.key});
 
@@ -26,8 +28,10 @@ class _AgeSelectionPageState extends State<AgeSelectionPage> {
             
         ),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              Column(
+                children: [
                Text(
                 'Your Age?',
                 style: TextStyle(
@@ -37,20 +41,22 @@ class _AgeSelectionPageState extends State<AgeSelectionPage> {
                   fontFamily: 'Mairy'
                   ),
               ),
+              const SizedBox(height: 5,),
               Text(
                 'Help us direct the best lessons for you',
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 20,
                   color: white,
                   fontWeight: FontWeight.w200,
                   fontFamily: 'Hind Madurai',
                 ),
-                ),
-              const SizedBox(height: 50),
+                ),]
+              ),
               Column(
+                mainAxisSize: MainAxisSize.max,
                 children: [
                   Container(
-                    width: 800,
+                    width: 350,
                     decoration:  BoxDecoration(
                       color: black,
                       borderRadius: const BorderRadius.all(Radius.circular(80))
@@ -69,9 +75,9 @@ class _AgeSelectionPageState extends State<AgeSelectionPage> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 10,),
+                  const SizedBox(height: 15,),
                   Container(
-                    width: 800,
+                    width: 350,
                     decoration: BoxDecoration(
                       color: black,
                       borderRadius: const BorderRadius.all(Radius.circular(80))
@@ -90,9 +96,9 @@ class _AgeSelectionPageState extends State<AgeSelectionPage> {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 10,),
+                  const SizedBox(height: 15,),
                   Container(
-                    width: 800,
+                    width: 350,
                     decoration: BoxDecoration(
                       color: black,
                       borderRadius: const BorderRadius.all(Radius.circular(80))
@@ -139,13 +145,19 @@ class _AgeSelectionPageState extends State<AgeSelectionPage> {
                     onPressed: selectedAgeRange != -1 ? () {
                       switch (selectedAgeRange) {
                         case 0:
-                          // Navigator.of(context).push();
+                          Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => const MyDashboard())
+                          );
                           break;
                         case 1:
-                          // Navigator.of(context).push();
+                           Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => const MyDashboard())
+                          );
                           break;
                         case 2:
-                        //  Navigator.of(context).push();
+                         Navigator.of(context).push(
+                            MaterialPageRoute(builder: (context) => const MyDashboard())
+                          );
                           break;
                       }
                     } : null,

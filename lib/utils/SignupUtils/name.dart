@@ -8,6 +8,7 @@ const Name({ super.key });
   Widget build(BuildContext context){
     return SizedBox(
       height: 40,
+      width: 350,
       child: TextFormField(
                   decoration:  InputDecoration(
                     constraints: const BoxConstraints(minWidth: 10),

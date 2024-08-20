@@ -8,10 +8,13 @@ class EmailTextForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return  SizedBox(
       height: 40,
-      child: TextFormField(
+      width: 350,
+      child: TextField(
                   decoration:  InputDecoration(
+                    contentPadding: const EdgeInsets.only(left: 10, right: 10),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(40.0)
+                      borderRadius: BorderRadius.circular(40.0),
+                      borderSide: BorderSide.none
                     ),
       
                     prefixIcon: Icon(
